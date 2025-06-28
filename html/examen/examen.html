@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen</title>
+    <link rel="stylesheet" href="../../bootstrap.css">
+    <style>
+        #ejercicio_2_html,
+        #ejercicio_3_html,
+        #ejercicio_4_html,
+        #ejercicio_5_html,
+        #ejercicio_6_html,
+        #ejercicio_7_html,
+        #ejercicio_8_html,
+        #ejercicio_9_html,
+        #ejercicio_10_html,
+        #ejercicio_11_html,
+        #ejercicio_12_html,
+        #ejercicio_13_html,
+        #ejercicio_14_html,
+        #ejercicio_15_html,
+        #ejercicio_16_html,
+        #ejercicio_17_html,
+        #ejercicio_18_html,
+        #ejercicio_19_html,
+        #ejercicio_20_html,
+        #certificado,
+        #boton_menu {
+            display: none;
+        }
+
+        h3 {
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        .container:last-child(0) {
+            background: white;
+            padding: 30px 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+            border-top: 5px solid #ad4444;
+        }
+
+        h2 {
+            text-align: center;
+            color: #6c3483;
+            margin-bottom: 20px;
+        }
+
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-size: 16px;
+            background-color: #fff9f9;
+            transition: border-color 0.3s;
+        }
+
+        input:focus,
+        select:focus {
+            border-color: #ad4444;
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="examen">
+            <nav class="navbar navbar-expand-xxl py-5 mx-0 bg-danger">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="../../logo_app.png" alt="Pptr Learn" width="100">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item ms-auto">
+                                <a class="nav-link" href="../../index.html">Menu</a>
+                            </li>
+                            <li class="nav-item ms-auto">
+                                <a class="nav-link" href="../../editor.html">Editor</a>
+                            </li>
+                            <li class="nav-item ms-auto">
+                                <a class="nav-link" href="#">Perfil</a>
+                            </li>
+                            <li class="nav-item ms-auto">
+                                <a class="nav-link" href="../../guia.html">Guia</a>
+                            </li>
+                            <li class="nav-item ms-auto">
+                                <a class="nav-link" href="../index.html">HTML</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <article id="ejercicio_1_html">
+                <h3 class="text-center bg-danger p-4">1. ¿Cuál es la funcion de la etiqueta &lt;title&gt; en un
+                    documento HTML ?</h3>
+                <div class="container p-2">
+                    <div
+                        class="respuestas row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 text-center justify-content-around">
+                        <span id="correcto_1.1_html" onclick="correcto_pregunta_1_html()"
+                            class="border border-2 border-black rounded-4 p-3 mx-2 px-1">
+                            Establecer el título que aparece en la pestaña del navegador
+                        </span>
+                        <span id="mal_1.1_html" onclick="mal_pregunta1_html()"
+                            class="border border-2 border-black rounded-4 p-3 mx-2 px-1">
+                            Agregar una imagen de fondo
+                        </span>
+                        <span id="mal_1.2_html" onclick="mal_pregunta1_html()"
+                            class="border border-2 border-black rounded-4 p-3 mx-2 px-1">
+                            Mostrar el título en el cuerpo del documento
+                        </span>
+                    </div>
+                </div>
+            </article>
+            <article id="ejercicio_2_html">
+                <h3 class="text-center bg-danger p-4">2. ¿Cuál de las siguientes etiquetas se utiliza para insertar una
+                    imagen en HTML?</h3>
+                <div class="container p-2">
+                    <div
+                        class=" respuestas row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 text-center justify-content-around">
+                        <span id="mal_2.1_html" onclick="mal_pregunta2_html()"
+                            class="border border-2 border-black rounded-4 p-3 mx-2 px-1">
+                            &lt;imagen&gt;
+                        </span>
+                        <span id="mal_2.2_html" onclick="mal_pregunta2_html()"
+                            class="border border-2 border-black rounded-4 p-3 mx-2 px-1">
+                            &lt;pic&gt;
+                        </span>
+                        <span id="correcto_2.1_html" onclick="correcto_pregunta_2_html()"
+                            class="border border-2 border-black rounded-4 p-3 mx-2 px-1">
+                            &lt;img&gt;
+                        </span>
+                    </div>
+                </div>
+            </article>
+            <article id="ejercicio_3_html">
+                <h3 class="text-center bg-danger p-4">3. ¿Qué etiqueta se usa para crear un enlace a otra página web?
+                </h3>
+                <div class="container p-2">
+                    <div
+                        class=" respuestas row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 text-center justify-content-around">
+                        <span id="mal_3.1_html" onclick="mal_pregunta3_html()"
+                            class="border border-2 border-black rounded-4 p-3 mx-2 px-1">
+                            &lt;link&gt;
+                        </span>
+                        <span id="mal_3.2_html" onclick="mal_pregunta3_html()"
+                            class="border border-2 border-black rounded-4 p-3 mx-2 px-1">
+                            &lt;href&gt;
+                        </span>
+                        <span id="correcto_3.1_html" onclick="correcto_pregunta_3_html()"
+                            class="border border-2 border-black rounded-4 p-3 mx-2 px-1">
+                            &lt;a&gt;
+                        </span>
+                    </div>
+                </div>
+            </article>
+            <article id="ejercicio_4_html">
+                <h3 class="text-center bg-danger p-4">4. ¿Cuál de estas etiquetas es para un salto de linea?</h3>
+                <div class="container p-2">
+                    <div
+                        class=" respuestas row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 text-center justify-content-around">
+                        <span id="mal_4.1_html" onclick="mal_pregunta4_html()"
+                            class="border border-2 border-black rounded-4 p-3 mx-2 px-1">
+                            &lt;div&gt;
+                        </span>
+                        <span id="mal_4.2_html" onclick="mal_pregunta4_html()"
+                            class="border border-2 border-black rounded-4 p-3 mx-2 px-1">
+                            &lt;span&gt;
+                        </span>
+                        <span id="correcto_4.1_html" onclick="correcto_pregunta_4_html()"
+                            class="border border-2 border-black rounded-4 p-3 mx-2 px-1">
+                            &lt;br&gt;
+                        </span>
+                    </div>
+                </div>
+            </article>
+            <article id="ejercicio_5_html">
+                <h3 class="text-center bg-danger p-4">5. ¿Cuál es la función principal de la etiqueta &lt;head&gt;?</h3>
+                <div class="container p-2">
+                    <div
+                        class=" respuestas row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 text-center justify-content-around">
+                        <span id="mal_5.1_html" onclick="mal_pregunta5_html()"
+                            class="border border-2 border-black rounded-4 p-3 mx-2 px-1">
+                            Mostrar encabezados visibles
+                        </span>
+                        <span id="mal_5.2_html" onclick="mal_pregunta5_html()"
+                            class="border border-2 border-black rounded-4 p-3 mx-2 px-1">
+                            Crear tablas
+                        </span>
+                        <span id="correcto_5.1_html" onclick="correcto_pregunta_5_html()"
+                            class="border border-2 border-black rounded-4 p-3 mx-2 px-1">
+                            Incluir metadatos y enlaces a recursos externos
+                        </span>
+                    </div>
+                </div>
+            </article>
+            <article id="ejercicio_6_html">
+                <h3 class="text-center bg-danger p-4">6. La etiqueta &lt;strong&gt; tiene el mismo efecto visual que
+                    &lt;b&gt;, pero con un significado
+                    semántico.</h3>
+                <div class="container p-2">
+                    <div
+                        class=" respuestas row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 text-center justify-content-around">
+                        <span id="mal_6.1_html" onclick="mal_pregunta6_html()"
+                            class="border border-2 border-black rounded-4 p-3 mx-2 px-1">
+                            Falso
+                        </span>
+                        <span id="correcto_6.1_html" onclick="correcto_pregunta_6_html()"
+                            class="border border-2 border-black rounded-4 p-3 mx-2 px-1">
+                            Verdadero
+                        </span>
+                    </div>
+                </div>
+            </article>
+            <article id="ejercicio_7_html">
+                <h3 class="text-center bg-danger p-4">7. &lt;ul&gt; crea una lista numerada.</h3>
+                <div class="container p-2">
+                    <div
+                        class=" respuestas row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 text-center justify-content-around">
+                        <span id="mal_7.2_html" onclick="mal_pregunta7_html()"
+                            class="border border-2 border-black rounded-4 p-3 mx-2 px-1">
+                            Verdadero
+                        </span>
+                        <span id="correcto_7.1_html" onclick="correcto_pregunta_7_html()"
+                            class="border border-2 border-black rounded-4 p-3 mx-2 px-1">
+                            Falso
+                        </span>
+                    </div>
+                </div>
+            </article>
+            <article id="ejercicio_8_html">
+                <h3 class="text-center bg-danger p-4">8. La etiqueta &lt;form&gt; se usa para crear formularios
+                    interactivos.</h3>
+                <div class="container p-2">
+                    <div
+                        class=" respuestas row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 text-center justify-content-around">
+                        <span id="mal_8.2_html" onclick="mal_pregunta8_html()"
+                            class="border border-2 border-black rounded-4 p-3 mx-2 px-1">
+                            Falso
+                        </span>
+                        <span id="correcto_8.1_html" onclick="correcto_pregunta_8_html()"
+                            class="border border-2 border-black rounded-4 p-3 mx-2 px-1">
+                            Verdadero
+                        </span>
+                    </div>
+                </div>
+            </article>
+            <article id="ejercicio_9_html">
+                <h3 class="text-center bg-danger p-4">9. La etiqueta &lt;br&gt; se utiliza para insertar un salto de
+                    línea. </h3>
+                <div class="container p-2">
+                    <div
+                        class=" respuestas row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 text-center justify-content-around">
+                        <span id="mal_9.2_html" onclick="mal_pregunta9_html()"
+                            class="border border-2 border-black rounded-4 p-3 mx-2 px-1">
+                            Falso
+                        </span>
+                        <span id="correcto_9.1_html" onclick="correcto_pregunta_9_html()"
+                            class="border border-2 border-black rounded-4 p-3 mx-2 px-1">
+                            Verdadero
+                        </span>
+                    </div>
+                </div>
+            </article>
+            <article id="ejercicio_10_html">
+                <h3 class="text-center bg-danger p-4">10. &lt;footer&gt; sólo puede usarse una vez por documento HTML.
+                </h3>
+                <div class="container p-2">
+                    <div
+                        class=" respuestas row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 text-center justify-content-around">
+                        <span id="mal_10.2_html" onclick="mal_pregunta10_html()"
+                            class="border border-2 border-black rounded-4 p-3 mx-2 px-1">
+                            Verdadero
+                        </span>
+                        <span id="correcto_10.1_html" onclick="correcto_pregunta_10_html()"
+                            class="border border-2 border-black rounded-4 p-3 mx-2 px-1">
+                            Falso
+                        </span>
+                    </div>
+                </div>
+            </article>
+            <article id="ejercicio_11_html">
+                <h3 class="text-center bg-danger p-4">11. ¿Que significa html? </h3>
+                <div class="container p-2">
+                    <div
+                        class=" respuestas row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 text-center justify-content-around">
+                        <span id="mal_11.1_html" onclick="mal_pregunta11_html()"
+                            class="border border-2 border-black rounded-4 p-3 mx-2 px-1">
+                            Hyperlinks and Text Markup Language
+                        </span>
+                        <span id="mal_11.2_html" onclick="mal_pregunta11_html()"
+                            class="border border-2 border-black rounded-4 p-3 mx-2 px-1">
+                            Home Tool Markup Language
+                        </span>
+                        <span id="correcto_11.1_html" onclick="correcto_pregunta_11_html()"
+                            class="border border-2 border-black rounded-4 p-3 mx-2 px-1">
+                            Hyper Text Markup Language
+                        </span>
+                    </div>
+                </div>
+            </article>
+            <article id="ejercicio_12_html">
+                <h3 class="text-center bg-danger p-4">12. ¿Qué etiqueta se usa para hacer texto en negrita?</h3>
+                <div class="container p-2">
+                    <div
+                        class=" respuestas row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 text-center justify-content-around">
+                        <span id="mal_12.1_html" onclick="mal_pregunta12_html()"
+                            class="border border-2 border-black rounded-4 p-3 mx-2 px-1">
+                            &lt;em&gt;
+                        </span>
+                        <span id="mal_12.2_html" onclick="mal_pregunta12_html()"
+                            class="border border-2 border-black rounded-4 p-3 mx-2 px-1">
+                            &lt;bold&gt;
+                        </span>
+                        <span id="correcto_12.1_html" onclick="correcto_pregunta_12_html()"
+                            class="border border-2 border-black rounded-4 p-3 mx-2 px-1">
+                            &lt;strong&gt;
+                        </span>
+                    </div>
+                </div>
+            </article>
+            <article id="ejercicio_13_html">
+                <h3 class="text-center bg-danger p-4">13. ¿Cuál de los siguientes elementos es un contenedor genérico
+                    sin significado semántico?</h3>
+                <div class="container p-2">
+                    <div
+                        class=" respuestas row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 text-center justify-content-around">
+                        <span id="mal_13.1_html" onclick="mal_pregunta13_html()"
+                            class="border border-2 border-black rounded-4 p-3 mx-2 px-1">
+                            &lt;section&gt;
+                        </span>
+                        <span id="mal_13.2_html" onclick="mal_pregunta13_html()"
+                            class="border border-2 border-black rounded-4 p-3 mx-2 px-1">
+                            &lt;article&gt;
+                        </span>
+                        <span id="correcto_13.1_html" onclick="correcto_pregunta_13_html()"
+                            class="border border-2 border-black rounded-4 p-3 mx-2 px-1">
+                            &lt;div&gt;
+                        </span>
+                    </div>
+                </div>
+            </article>
+            <article id="ejercicio_14_html">
+                <h3 class="text-center bg-danger p-4">14. ¿Qué atributo se usa para abrir un enlace en una nueva
+                    pestaña?</h3>
+                <div class="container p-2">
+                    <div
+                        class=" respuestas row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 text-center justify-content-around">
+                        <span id="mal_14.1_html" onclick="mal_pregunta14_html()"
+                            class="border border-2 border-black rounded-4 p-3 mx-2 px-1">
+                            href="_blank"
+                        </span>
+                        <span id="mal_14.2_html" onclick="mal_pregunta14_html()"
+                            class="border border-2 border-black rounded-4 p-3 mx-2 px-1">
+                            open="_blank"
+                        </span>
+                        <span id="correcto_14.1_html" onclick="correcto_pregunta_14_html()"
+                            class="border border-2 border-black rounded-4 p-3 mx-2 px-1">
+                            target="_blank"
+                        </span>
+                    </div>
+                </div>
+            </article>
+            <article id="ejercicio_15_html">
+                <h3 class="text-center bg-danger p-4">15. ¿Cuál es la forma correcta de comentar en HTML?</h3>
+                <div class="container p-2">
+                    <div
+                        class=" respuestas row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 text-center justify-content-around">
+                        <span id="mal_15.1_html" onclick="mal_pregunta15_html()"
+                            class="border border-2 border-black rounded-4 p-3 mx-2 px-1">
+                            // Comentario
+                        </span>
+                        <span id="mal_15.2_html" onclick="mal_pregunta15_html()"
+                            class="border border-2 border-black rounded-4 p-3 mx-2 px-1">
+                            #comentario
+                        </span>
+                        <span id="correcto_15.1_html" onclick="correcto_pregunta_15_html()"
+                            class="border border-2 border-black rounded-4 p-3 mx-2 px-1">
+                            &lt;!-- Comentario --&gt;
+                        </span>
+                    </div>
+                </div>
+            </article>
+            <article id="ejercicio_16_html">
+                <h3 class="text-center bg-danger p-4">16. ¿Cuál de estas etiquetas se usa para insertar contenido
+                    multimedia como audio?</h3>
+                <div class="container p-2">
+                    <div
+                        class=" respuestas row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 text-center justify-content-around">
+                        <span id="mal_16.1_html" onclick="mal_pregunta16_html()"
+                            class="border border-2 border-black rounded-4 p-3 mx-2 px-1">
+                            &lt;video&gt;
+                        </span>
+                        <span id="mal_16.2_html" onclick="mal_pregunta16_html()"
+                            class="border border-2 border-black rounded-4 p-3 mx-2 px-1">
+                            &lt;/media&gt;
+                        </span>
+                        <span id="correcto_16.1_html" onclick="correcto_pregunta_16_html()"
+                            class="border border-2 border-black rounded-4 p-3 mx-2 px-1">
+                            &lt;/audio&gt;
+                        </span>
+                    </div>
+                </div>
+            </article>
+            <article id="ejercicio_17_html">
+                <h3 class="text-center bg-danger p-4">17. ¿Cuál de estas etiquetas se usa para definir una tabla?</h3>
+                <div class="container p-2">
+                    <div
+                        class=" respuestas row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 text-center justify-content-around">
+                        <span id="mal_17.1_html" onclick="mal_pregunta17_html()"
+                            class="border border-2 border-black rounded-4 p-3 mx-2 px-1">
+                            &lt;tbl&gt;
+                        </span>
+                        <span id="mal_17.2_html" onclick="mal_pregunta17_html()"
+                            class="border border-2 border-black rounded-4 p-3 mx-2 px-1">
+                            &lt;tab&gt;
+                        </span>
+                        <span id="correcto_17.1_html" onclick="correcto_pregunta_17_html()"
+                            class="border border-2 border-black rounded-4 p-3 mx-2 px-1">
+                            &lt;table&gt;
+                        </span>
+                    </div>
+                </div>
+            </article>
+            <article id="ejercicio_18_html">
+                <h3 class="text-center bg-danger p-4">18. ¿Cuál es la etiqueta correcta para definir una celda de datos
+                    en una tabla?</h3>
+                <div class="container p-2">
+                    <div
+                        class=" respuestas row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 text-center justify-content-around">
+                        <span id="mal_18.1_html" onclick="mal_pregunta18_html()"
+                            class="border border-2 border-black rounded-4 p-3 mx-2 px-1">
+                            &lt;/th&gt;
+                        </span>
+                        <span id="mal_18.2_html" onclick="mal_pregunta18_html()"
+                            class="border border-2 border-black rounded-4 p-3 mx-2 px-1">
+                            &lt;tr&gt;
+                        </span>
+                        <span id="correcto_18.1_html" onclick="correcto_pregunta_18_html()"
+                            class="border border-2 border-black rounded-4 p-3 mx-2 px-1">
+                            &lt;td&gt;
+                        </span>
+                    </div>
+                </div>
+            </article>
+            <article id="ejercicio_19_html">
+                <h3 class="text-center bg-danger p-4">19. ¿Cuál es la función de la etiqueta
+                    &lt;meta&gt; en HTML?</h3>
+                <div class="container p-2">
+                    <div
+                        class=" respuestas row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 text-center justify-content-around">
+                        <span id="mal_19.1_html" onclick="mal_pregunta19_html()"
+                            class="border border-2 border-black rounded-4 p-3 mx-2 px-1">
+                            Mostrar imágenes
+                        </span>
+                        <span id="mal_19.2_html" onclick="mal_pregunta19_html()"
+                            class="border border-2 border-black rounded-4 p-3 mx-2 px-1">
+                            Añadir títulos
+                        </span>
+                        <span id="correcto_19.1_html" onclick="correcto_pregunta_19_html()"
+                            class="border border-2 border-black rounded-4 p-3 mx-2 px-1">
+                            Proporcionar información sobre la página
+                            prioridad.
+                        </span>
+                    </div>
+                </div>
+            </article>
+            <article id="ejercicio_20_html">
+                <h3 class="text-center bg-danger p-4">20. ¿Qué etiqueta se usa para crear un hipervínculo?</h3>
+                <div class="container p-2">
+                    <div
+                        class=" respuestas row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 text-center justify-content-around">
+                        <span id="mal_20.1_html" onclick="mal_pregunta20_html()"
+                            class="border border-2 border-black rounded-4 p-3 mx-2 px-1">
+                            &lt;link&gt;
+                        </span>
+                        <span id="mal_20.2_html" onclick="mal_pregunta20_html()"
+                            class="border border-2 border-black rounded-4 p-3 mx-2 px-1">
+                            &lt;href&gt;
+                        </span>
+                        <span id="correcto_20.1_html" onclick="correcto_pregunta_20_html()"
+                            class="border border-2 border-black rounded-4 p-3 mx-2 px-1">
+                            &lt;a&gt;
+                        </span>
+                    </div>
+                </div>
+            </article>
+            <div class="container" id="certificado">
+                <input type="text" name="" id="nombre" placeholder="Ingresa tu nombre" class="w-100 p-1 mt-4 rounded-1 form-control">
+
+                <button class="btn btn-danger w-100 my-2" onclick="generarCertificado()">Descargar Certificado</button>
+            </div>
+            <a href="../../index.html" id="boton_menu" class="btn btn-secondary mx-auto w-25 my-5">
+                menu
+            </a>
+        </div>
+    </main>
+    <script type="module" src="../../bootstrap.js"></script>
+    <script type="module" src="../../certificado.js"></script>
+    <script>
+        async function generarCertificado() {
+            const curso = "HTML";
+            const examen = cantidad_respuestas_correctas_html/2*10;
+
+            if (!curso || isNaN(examen)) {
+                alert("Por favor, selecciona un curso y proporciona la calificación.");
+                return;
+            }
+
+            const nombre = document.getElementById("nombre").value;
+            if (!nombre || nombre.trim() === "") {
+                alert("Nombre no válido. Intenta de nuevo.");
+                return;
+            }
+
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF("landscape");
+
+            // Fondo decorativo
+            doc.setFillColor(248, 244, 252); // Lila claro
+            doc.rect(10, 10, 270, 180, "F");
+
+            // Título
+            doc.setFont("helvetica", "bold");
+            doc.setFontSize(26);
+            doc.setTextColor(142, 68, 173);
+            doc.text("CERTIFICADO DE FINALIZACIÓN", 148, 40, { align: "center" });
+
+            // Cuerpo del certificado
+            doc.setTextColor(0, 0, 0);
+            doc.setFontSize(14);
+            doc.setFont("helvetica", "normal");
+            doc.text("Se otorga el presente certificado a:", 148, 65, { align: "center" });
+
+            doc.setFont("helvetica", "bold");
+            doc.setFontSize(18);
+            doc.text(nombre, 148, 80, { align: "center" });
+
+            doc.setFont("helvetica", "normal");
+            doc.setFontSize(14);
+            doc.text("Por completar satisfactoriamente el curso:", 148, 95, { align: "center" });
+
+            doc.setFont("helvetica", "bold");
+            doc.setFontSize(16);
+            doc.text(curso, 148, 110, { align: "center" });
+
+            doc.setFont("helvetica", "normal");
+            doc.setFontSize(14);
+            doc.text(`Con una calificación final de: ${examen} / 100`, 148, 125, { align: "center" });
+
+            doc.setFontSize(12);
+            doc.text("Fecha de emisión: " + new Date().toLocaleDateString(), 148, 140, { align: "center" });
+
+            // Línea de firma
+            doc.setDrawColor(142, 68, 173);
+            doc.line(120, 160, 180, 160);
+            doc.text("Firma del instructor", 150, 168, { align: "center" });
+
+            // Guardar el PDF
+            doc.save(`${nombre.replaceAll(" ", "_")}_${curso}_certificado.pdf`);
+        }
+    </script>
+    <script>
+        //variables de guardado de items del documento        
+        correcto_1_1_html = document.getElementById("correcto_1.1_html");
+        correcto_2_1_html = document.getElementById("correcto_2.1_html");
+        correcto_3_1_html = document.getElementById("correcto_3.1_html");
+        correcto_4_1_html = document.getElementById("correcto_4.1_html");
+        correcto_5_1_html = document.getElementById("correcto_5.1_html");
+        correcto_6_1_html = document.getElementById("correcto_6.1_html");
+        correcto_7_1_html = document.getElementById("correcto_7.1_html");
+        correcto_8_1_html = document.getElementById("correcto_8.1_html");
+        correcto_9_1_html = document.getElementById("correcto_9.1_html");
+        correcto_10_1_html = document.getElementById("correcto_10.1_html");
+        correcto_11_1_html = document.getElementById("correcto_11.1_html");
+        correcto_12_1_html = document.getElementById("correcto_12.1_html");
+        correcto_13_1_html = document.getElementById("correcto_13.1_html");
+        correcto_14_1_html = document.getElementById("correcto_14.1_html");
+        correcto_15_1_html = document.getElementById("correcto_15.1_html");
+        correcto_16_1_html = document.getElementById("correcto_16.1_html");
+        correcto_17_1_html = document.getElementById("correcto_17.1_html");
+        correcto_18_1_html = document.getElementById("correcto_18.1_html");
+        correcto_19_1_html = document.getElementById("correcto_19.1_html");
+        correcto_20_1_html = document.getElementById("correcto_20.1_html");
+
+        ejercicio_1_html = document.getElementById("ejercicio_1_html")
+        ejercicio_2_html = document.getElementById("ejercicio_2_html")
+        ejercicio_3_html = document.getElementById("ejercicio_3_html")
+        ejercicio_4_html = document.getElementById("ejercicio_4_html")
+        ejercicio_5_html = document.getElementById("ejercicio_5_html")
+        ejercicio_6_html = document.getElementById("ejercicio_6_html")
+        ejercicio_7_html = document.getElementById("ejercicio_7_html")
+        ejercicio_8_html = document.getElementById("ejercicio_8_html")
+        ejercicio_9_html = document.getElementById("ejercicio_9_html")
+        ejercicio_10_html = document.getElementById("ejercicio_10_html")
+        ejercicio_11_html = document.getElementById("ejercicio_11_html")
+        ejercicio_12_html = document.getElementById("ejercicio_12_html")
+        ejercicio_13_html = document.getElementById("ejercicio_13_html")
+        ejercicio_14_html = document.getElementById("ejercicio_14_html")
+        ejercicio_15_html = document.getElementById("ejercicio_15_html")
+        ejercicio_16_html = document.getElementById("ejercicio_16_html")
+        ejercicio_17_html = document.getElementById("ejercicio_17_html")
+        ejercicio_18_html = document.getElementById("ejercicio_18_html")
+        ejercicio_19_html = document.getElementById("ejercicio_19_html")
+        ejercicio_20_html = document.getElementById("ejercicio_20_html")
+
+        respuesta = document.getElementById("respuesta");
+
+        boton_menu = document.getElementById("boton_menu");
+
+        certificado = document.getElementById("certificado");
+
+        //variables de estado        
+        let cantidad_respuestas_correctas_html = 0;
+        let pregunta_1_html = false;
+        let pregunta_2_html = false;
+        let pregunta_3_html = false;
+        let pregunta_4_html = false;
+        let pregunta_5_html = false;
+        let pregunta_6_html = false;
+        let pregunta_7_html = false;
+        let pregunta_8_html = false;
+        let pregunta_9_html = false;
+        let pregunta_10_html = false;
+        let pregunta_11_html = false;
+        let pregunta_12_html = false;
+        let pregunta_13_html = false;
+        let pregunta_14_html = false;
+        let pregunta_15_html = false;
+        let pregunta_16_html = false;
+        let pregunta_17_html = false;
+        let pregunta_18_html = false;
+        let pregunta_19_html = false;
+        let pregunta_20_html = false;
+
+        //funciones de botones        
+        const correcto_pregunta_1_html = () => {
+            ejercicio_2_html.style.display = 'block';
+            ejercicio_1_html.style.display = 'none';
+            cantidad_respuestas_correctas_html = cantidad_respuestas_correctas_html + 1;
+            pregunta_1_html = true;
+        }
+        const mal_pregunta1_html = () => {
+            ejercicio_2_html.style.display = 'block';
+            ejercicio_1_html.style.display = 'none';
+        }
+        const correcto_pregunta_2_html = () => {
+            ejercicio_3_html.style.display = 'block';
+            ejercicio_2_html.style.display = 'none';
+            cantidad_respuestas_correctas_html = cantidad_respuestas_correctas_html + 1;
+            pregunta_2_html = true;
+        }
+        const mal_pregunta2_html = () => {
+            ejercicio_3_html.style.display = 'block';
+            ejercicio_2_html.style.display = 'none';
+        }
+        const correcto_pregunta_3_html = () => {
+            ejercicio_4_html.style.display = 'block';
+            ejercicio_3_html.style.display = 'none';
+            cantidad_respuestas_correctas_html = cantidad_respuestas_correctas_html + 1;
+            pregunta_3_html = true;
+        }
+        const mal_pregunta3_html = () => {
+            ejercicio_4_html.style.display = 'block';
+            ejercicio_3_html.style.display = 'none';
+        }
+        const correcto_pregunta_4_html = () => {
+            ejercicio_5_html.style.display = 'block';
+            ejercicio_4_html.style.display = 'none';
+            cantidad_respuestas_correctas_html = cantidad_respuestas_correctas_html + 1;
+            pregunta_4_html = true;
+        }
+        const mal_pregunta4_html = () => {
+            ejercicio_5_html.style.display = 'block';
+            ejercicio_4_html.style.display = 'none';
+        }
+        const correcto_pregunta_5_html = () => {
+            ejercicio_6_html.style.display = 'block';
+            ejercicio_5_html.style.display = 'none';
+            cantidad_respuestas_correctas_html = cantidad_respuestas_correctas_html + 1;
+            pregunta_5_html = true;
+        }
+        const mal_pregunta5_html = () => {
+            ejercicio_6_html.style.display = 'block';
+            ejercicio_5_html.style.display = 'none';
+        }
+        const correcto_pregunta_6_html = () => {
+            ejercicio_7_html.style.display = 'block';
+            ejercicio_6_html.style.display = 'none';
+            cantidad_respuestas_correctas_html = cantidad_respuestas_correctas_html + 1;
+            pregunta_6_html = true;
+        }
+        const mal_pregunta6_html = () => {
+            ejercicio_7_html.style.display = 'block';
+            ejercicio_6_html.style.display = 'none';
+        }
+        const correcto_pregunta_7_html = () => {
+            ejercicio_8_html.style.display = 'block';
+            ejercicio_7_html.style.display = 'none';
+            cantidad_respuestas_correctas_html = cantidad_respuestas_correctas_html + 1;
+            pregunta_7_html = true;
+        }
+        const mal_pregunta7_html = () => {
+            ejercicio_8_html.style.display = 'block';
+            ejercicio_7_html.style.display = 'none';
+        }
+        const correcto_pregunta_8_html = () => {
+            ejercicio_9_html.style.display = 'block';
+            ejercicio_8_html.style.display = 'none';
+            cantidad_respuestas_correctas_html = cantidad_respuestas_correctas_html + 1;
+            pregunta_8_html = true;
+        }
+        const mal_pregunta8_html = () => {
+            ejercicio_9_html.style.display = 'block';
+            ejercicio_8_html.style.display = 'none';
+        }
+        const correcto_pregunta_9_html = () => {
+            ejercicio_10_html.style.display = 'block';
+            ejercicio_9_html.style.display = 'none';
+            cantidad_respuestas_correctas_html = cantidad_respuestas_correctas_html + 1;
+            pregunta_9_html = true;
+        }
+        const mal_pregunta9_html = () => {
+            ejercicio_10_html.style.display = 'block';
+            ejercicio_9_html.style.display = 'none';
+        }
+        const correcto_pregunta_10_html = () => {
+            ejercicio_11_html.style.display = 'block';
+            ejercicio_10_html.style.display = 'none';
+            cantidad_respuestas_correctas_html = cantidad_respuestas_correctas_html + 1;
+            pregunta_10_html = true;
+        }
+        const mal_pregunta10_html = () => {
+            ejercicio_11_html.style.display = 'block';
+            ejercicio_10_html.style.display = 'none';
+        }
+        const correcto_pregunta_11_html = () => {
+            ejercicio_12_html.style.display = 'block';
+            ejercicio_11_html.style.display = 'none';
+            cantidad_respuestas_correctas_html = cantidad_respuestas_correctas_html + 1;
+            pregunta_11_html = true;
+        }
+        const mal_pregunta11_html = () => {
+            ejercicio_12_html.style.display = 'block';
+            ejercicio_11_html.style.display = 'none';
+        }
+        const correcto_pregunta_12_html = () => {
+            ejercicio_13_html.style.display = 'block';
+            ejercicio_12_html.style.display = 'none';
+            cantidad_respuestas_correctas_html = cantidad_respuestas_correctas_html + 1;
+            pregunta_12_html = true;
+        }
+        const mal_pregunta12_html = () => {
+            ejercicio_13_html.style.display = 'block';
+            ejercicio_12_html.style.display = 'none';
+        }
+        const correcto_pregunta_13_html = () => {
+            ejercicio_14_html.style.display = 'block';
+            ejercicio_13_html.style.display = 'none';
+            cantidad_respuestas_correctas_html = cantidad_respuestas_correctas_html + 1;
+            pregunta_13_html = true;
+        }
+        const mal_pregunta13_html = () => {
+            ejercicio_14_html.style.display = 'block';
+            ejercicio_13_html.style.display = 'none';
+        }
+        const correcto_pregunta_14_html = () => {
+            ejercicio_15_html.style.display = 'block';
+            ejercicio_14_html.style.display = 'none';
+            cantidad_respuestas_correctas_html = cantidad_respuestas_correctas_html + 1;
+            pregunta_14_html = true;
+        }
+        const mal_pregunta14_html = () => {
+            ejercicio_15_html.style.display = 'block';
+            ejercicio_14_html.style.display = 'none';
+        }
+        const correcto_pregunta_15_html = () => {
+            ejercicio_16_html.style.display = 'block';
+            ejercicio_15_html.style.display = 'none';
+            cantidad_respuestas_correctas_html = cantidad_respuestas_correctas_html + 1;
+            pregunta_15_html = true;
+        }
+        const mal_pregunta15_html = () => {
+            ejercicio_16_html.style.display = 'block';
+            ejercicio_15_html.style.display = 'none';
+        }
+        const correcto_pregunta_16_html = () => {
+            ejercicio_17_html.style.display = 'block';
+            ejercicio_16_html.style.display = 'none';
+            cantidad_respuestas_correctas_html = cantidad_respuestas_correctas_html + 1;
+            pregunta_16_html = true;
+        }
+        const mal_pregunta16_html = () => {
+            ejercicio_17_html.style.display = 'block';
+            ejercicio_16_html.style.display = 'none';
+        }
+        const correcto_pregunta_17_html = () => {
+            ejercicio_18_html.style.display = 'block';
+            ejercicio_17_html.style.display = 'none';
+            cantidad_respuestas_correctas_html = cantidad_respuestas_correctas_html + 1;
+            pregunta_17_html = true;
+        }
+        const mal_pregunta17_html = () => {
+            ejercicio_18_html.style.display = 'block';
+            ejercicio_17_html.style.display = 'none';
+        }
+        const correcto_pregunta_18_html = () => {
+            ejercicio_19_html.style.display = 'block';
+            ejercicio_18_html.style.display = 'none';
+            cantidad_respuestas_correctas_html = cantidad_respuestas_correctas_html + 1;
+            pregunta_18_html = true;
+        }
+        const mal_pregunta18_html = () => {
+            ejercicio_19_html.style.display = 'block';
+            ejercicio_18_html.style.display = 'none';
+        }
+        const correcto_pregunta_19_html = () => {
+            ejercicio_20_html.style.display = 'block';
+            ejercicio_19_html.style.display = 'none';
+            cantidad_respuestas_correctas_html = cantidad_respuestas_correctas_html + 1;
+            pregunta_19_html = true;
+        }
+        const mal_pregunta19_html = () => {
+            ejercicio_20_html.style.display = 'block';
+            ejercicio_19_html.style.display = 'none';
+        }
+        const correcto_pregunta_20_html = () => {
+            ejercicio_20_html.style.display = 'none';
+            cantidad_respuestas_correctas_html = cantidad_respuestas_correctas_html + 1;
+            pregunta_20_html = true;
+            boton_menu.style.display = 'block';
+            certificado.style.display = 'block';
+        }
+        const mal_pregunta20_html = () => {
+            ejercicio_20_html.style.display = 'none';
+            boton_menu.style.display = 'block';
+            certificado.style.display = 'block';
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Curso CSS 6 - Modelo de Caja</title>
+    <link href="../bootstrap.css" rel="stylesheet" />
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        header {
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        .content {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        pre {
+            background-color: #f1f1f1;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+
+        .reflection-box {
+            background: #e9f7ef;
+            border: 2px dashed #20c3c9;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-top: 2rem;
+        }
+
+        .btn-reflection {
+            background-color: #198087;
+            color: white;
+        }
+
+        .btn-reflection:hover {
+            background-color: #146c65;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="bg-primary">
+        <nav class="navbar navbar-expand-xxl py-0 mx-0">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../logo_app.png" alt="Pptr Learn" width="100">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="../index.html">Menu</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="../editor.html">Editor</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="#">Perfil</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="../guia.html">Guia</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="index.html">CSS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <h1>Curso de CSS - Lección 6</h1>
+        <p class="lead">Modelo de Caja (Box Model)</p>
+    </header>
+
+    <main class="container my-5">
+        <div class="content">
+            <h2 class="text-primary">¿Qué es el Modelo de Caja?</h2>
+            <p>En CSS, todos los elementos HTML se consideran cajas rectangulares. El modelo de caja describe el diseño
+                y el espacio de estos elementos.</p>
+
+            <h3 class="text-primary">Partes del modelo de caja:</h3>
+            <ul>
+                <li><strong>Content:</strong> el contenido del elemento (texto, imagen, etc.)</li>
+                <li><strong>Padding:</strong> espacio entre el contenido y el borde</li>
+                <li><strong>Border:</strong> el borde del elemento</li>
+                <li><strong>Margin:</strong> espacio fuera del borde, separación con otros elementos</li>
+            </ul>
+
+            <h3 class="text-primary">Ejemplo de CSS:</h3>
+            <pre><code>.caja {
+  width: 200px;
+  padding: 20px;
+  border: 5px solid #198754;
+  margin: 30px;
+}</code></pre>
+
+            <h3 class="text-primary">Visualización del modelo de caja:</h3>
+            <img src="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model/box-model.png"
+                alt="Modelo de caja" class="img-fluid rounded shadow-sm my-4" />
+
+            <h3 class="text-primary">Propiedad <code>box-sizing</code></h3>
+            <p>Por defecto, el tamaño de los elementos no incluye padding ni border. Puedes cambiar eso con:</p>
+
+            <pre><code>* {
+  box-sizing: border-box;
+}</code></pre>
+
+            <p>Esto hace que el ancho y alto incluyan padding y border, facilitando el diseño.</p>
+
+            <hr class="my-4">
+
+            <div class="reflection-box">
+                <h4>¿Qué te llevas de esta lección?</h4>
+                <p>Escribe aquí lo que aprendiste o lo que te pareció más interesante:</p>
+                <form>
+                    <div class="mb-3">
+                        <textarea class="form-control" rows="4"
+                            placeholder="Por ejemplo: Entendí cómo se calcula el espacio real de una caja y la importancia del box-sizing."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-reflection">Enviar reflexión</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center text-white bg-dark py-3">
+        <p>&copy; 2025 Curso de CSS. Todos los derechos reservados.</p>
+    </footer>
+
+    <script type="module" src="../bootstrap.js"></script>
+
+</body>
+
+</html>

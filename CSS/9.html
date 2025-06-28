@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Curso CSS 9 - Diseño de Layouts</title>
+    <link href="../bootstrap.css" rel="stylesheet" />
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        header {
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        .content {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        pre {
+            background-color: #f1f1f1;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+
+        .reflection-box {
+            background: #e9f7ef;
+            border: 2px dashed #20c3c9;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-top: 2rem;
+        }
+
+        .btn-reflection {
+            background-color: #198087;
+            color: white;
+        }
+
+        .btn-reflection:hover {
+            background-color: #146c65;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="bg-primary">
+        <nav class="navbar navbar-expand-xxl py-0 mx-0">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../logo_app.png" alt="Pptr Learn" width="100">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="../index.html">Menu</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="../editor.html">Editor</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="#">Perfil</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="../guia.html">Guia</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="index.html">CSS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <h1>Curso de CSS - Lección 9</h1>
+        <p class="lead">Diseño de Layouts</p>
+    </header>
+
+    <main class="container my-5">
+        <div class="content">
+            <h2 class="text-primary">Diseño con Flexbox</h2>
+            <p>Flexbox es una herramienta de CSS para crear diseños de página responsivos y flexibles.</p>
+            <p>Las propiedades clave de Flexbox son:</p>
+            <ul>
+                <li><strong>display: flex;</strong> para activar Flexbox en un contenedor.</li>
+                <li><strong>justify-content:</strong> Alineación de los elementos a lo largo del eje principal.</li>
+                <li><strong>align-items:</strong> Alineación de los elementos a lo largo del eje transversal.</li>
+                <li><strong>flex-wrap:</strong> Permite que los elementos se envuelvan en varias líneas si es necesario.
+                </li>
+            </ul>
+
+            <h3 class="text-primary">Ejemplo básico de Flexbox:</h3>
+            <pre><code>.contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.elemento {
+  flex: 1;
+  margin: 10px;
+}
+      </code></pre>
+
+            <h3 class="text-primary">Ejemplo visual:</h3>
+            <div class="contenedor"
+                style="display: flex; justify-content: space-between; align-items: center; background-color: #f0f0f0; padding: 20px;">
+                <div class="elemento" style="background-color: #198087; height: 100px; width: 33%;"></div>
+                <div class="elemento" style="background-color: #20c3c9; height: 100px; width: 33%;"></div>
+                <div class="elemento" style="background-color: #146c65; height: 100px; width: 33%;"></div>
+            </div>
+
+            <h2 class="text-primary">Diseño con Grid</h2>
+            <p>CSS Grid Layout es una herramienta poderosa para crear layouts en dos dimensiones.</p>
+            <p>Las propiedades clave de Grid son:</p>
+            <ul>
+                <li><strong>display: grid;</strong> para activar Grid en un contenedor.</li>
+                <li><strong>grid-template-columns:</strong> Define el número de columnas y su tamaño.</li>
+                <li><strong>grid-gap:</strong> Define el espacio entre las filas y las columnas.</li>
+            </ul>
+
+            <h3 class="text-primary">Ejemplo básico de Grid:</h3>
+            <pre><code>.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.grid-item {
+  background-color: #198754;
+  height: 100px;
+}
+      </code></pre>
+
+            <h3 class="text-primary">Ejemplo visual:</h3>
+            <div class="grid-container" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
+                <div class="grid-item" style=" height: 100px; width: 33%; background-color: #198087;"></div>
+                <div class="grid-item" style=" height: 100px; width: 33%; background-color: #20c3c9;"></div>
+                <div class="grid-item" style=" height: 100px; width: 33%; background-color: #146c65;"></div>
+                <div class="grid-item" style=" height: 100px; width: 33%; background-color: #146c65;"></div>
+                <div class="grid-item" style=" height: 100px; width: 33%; background-color: #198087;"></div>
+                <div class="grid-item" style=" height: 100px; width: 33%; background-color: #20c3c9;"></div>
+                <div class="grid-item" style=" height: 100px; width: 33%; background-color: #20c3c9;"></div>
+                <div class="grid-item" style=" height: 100px; width: 33%; background-color: #146c65;"></div>
+                <div class="grid-item" style=" height: 100px; width: 33%; background-color: #198087;"></div>
+            </div>
+
+            <hr class="my-4">
+
+            <div class="reflection-box">
+                <h4>¿Qué te llevas de esta lección?</h4>
+                <p>Escribe aquí lo que aprendiste o lo que te pareció más interesante:</p>
+                <form>
+                    <div class="mb-3">
+                        <textarea class="form-control" rows="4"
+                            placeholder="Por ejemplo: Ahora sé cómo usar Flexbox y Grid para crear layouts responsivos."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-reflection">Enviar reflexión</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center text-white bg-dark py-3">
+        <p>&copy; 2025 Curso de CSS. Todos los derechos reservados.</p>
+    </footer>
+
+    <script type="module" src="../bootstrap.js"></script>
+
+</body>
+
+</html>

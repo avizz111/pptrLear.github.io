@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Curso CSS 5 - Unidades de medida y tamaños</title>
+    <link href="../bootstrap.css" rel="stylesheet" />
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        header {
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        .content {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        pre {
+            background-color: #f1f1f1;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+
+        .reflection-box {
+            background: #e9f7ef;
+            border: 2px dashed #20c3c9;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-top: 2rem;
+        }
+
+        .btn-reflection {
+            background-color: #198087;
+            color: white;
+        }
+
+        .btn-reflection:hover {
+            background-color: #146c65;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="bg-primary">
+        <nav class="navbar navbar-expand-xxl py-0 mx-0">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../logo_app.png" alt="Pptr Learn" width="100">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="../index.html">Menu</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="../editor.html">Editor</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="#">Perfil</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="../guia.html">Guia</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="index.html">CSS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <h1>Curso de CSS - Lección 5</h1>
+        <p class="lead">Unidades de medida y tamaños</p>
+    </header>
+
+    <main class="container my-5">
+        <div class="content">
+            <h2 class="text-primary">Unidades de medida en CSS</h2>
+            <p>CSS permite usar diferentes tipos de unidades para definir tamaños. Se dividen en dos grupos principales:
+            </p>
+
+            <h3>Unidades absolutas:</h3>
+            <ul>
+                <li><code>px</code>: píxeles</li>
+                <li><code>cm</code>, <code>mm</code>: centímetros, milímetros</li>
+                <li><code>in</code>: pulgadas</li>
+                <li><code>pt</code>, <code>pc</code>: puntos, picas</li>
+            </ul>
+
+            <h3>Unidades relativas:</h3>
+            <ul>
+                <li><code>%</code>: porcentaje relativo al elemento padre</li>
+                <li><code>em</code>: relativo al tamaño de fuente del elemento padre</li>
+                <li><code>rem</code>: relativo al tamaño de fuente del <code>html</code></li>
+                <li><code>vw</code>, <code>vh</code>: ancho y alto del viewport</li>
+            </ul>
+
+            <h3>Ejemplo:</h3>
+            <pre><code>div {
+  width: 80%;
+  font-size: 1.2em;
+  padding: 2rem;
+  margin: 5vh;
+}</code></pre>
+
+            <h2 class="text-primary">Tamaño de elementos</h2>
+            <p>Para controlar el tamaño de los elementos puedes usar:</p>
+            <ul>
+                <li><code>width</code>: ancho</li>
+                <li><code>height</code>: alto</li>
+                <li><code>max-width</code>, <code>min-width</code>: tamaño máximo y mínimo</li>
+                <li><code>max-height</code>, <code>min-height</code>: altura máxima y mínima</li>
+            </ul>
+
+            <pre><code>.caja {
+  width: 300px;
+  height: 200px;
+  max-width: 100%;
+}</code></pre>
+
+            <img src="https://www.w3schools.com/css/img_css_units.gif" alt="Unidades CSS"
+                class="img-fluid rounded shadow-sm my-4" />
+
+            <hr class="my-4">
+
+            <div class="reflection-box">
+                <h4>¿Qué te llevas de esta lección?</h4>
+                <p>Escribe aquí lo que aprendiste o lo que te pareció más interesante:</p>
+                <form>
+                    <div class="mb-3">
+                        <textarea class="form-control" rows="4"
+                            placeholder="Por ejemplo: Ahora entiendo cuándo usar rem en lugar de px y cómo se adaptan los tamaños con vw y vh."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-reflection">Enviar reflexión</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center text-white bg-dark py-3">
+        <p>&copy; 2025 Curso de CSS. Todos los derechos reservados.</p>
+    </footer>
+
+    <script type="module" src="../bootstrap.js"></script>
+
+</body>
+
+</html>

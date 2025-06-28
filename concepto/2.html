@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conceptos de programacion </title>
+    <link href="../bootstrap.css" rel="stylesheet" />
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        header {
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        .content {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        pre {
+            background-color: #f1f1f1;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+
+        .reflection-box {
+            background: #e9f7f1;
+            border: 2px dashed #20c988;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-top: 2rem;
+        }
+
+        .btn-reflection {
+            background-color: #19875d;
+            color: white;
+        }
+
+        .btn-reflection:hover {
+            background-color: #146c4a;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="bg-teal">
+        <nav class="navbar navbar-expand-xxl py-0 mx-0">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../logo_app.png" alt="Pptr Learn" width="100">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="../index.html">Menu</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="../editor.html">Editor</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="#">Perfil</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="../guia.html">Guia</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="index.html">Conceptos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <h1>Curso 1: Introduccion de los conceptos de la programacion </h1>
+        <p class="lead">Aprende la base de todas las páginas web</p>
+    </header>
+
+    <main class="container my-5">
+        <section class="mb-5">
+            <h2 class="text-teal">¿Qué son las condicionales(if ,else ,elif)?</h2>
+            <p>
+                Son instrucciones que permiten que el programa  <strong>tome decisiones .</strong>
+            </p>
+        </section>
+
+        <section class="mb-5">
+            <h2 class="text-teal">Estructura básica de condicionales</h2>
+            <p>Cada variable tiene un tipo , como esta:</p>
+            <pre>
+&lt;if condicion : &gt;
+&lt;else:&gt;
+      </pre>
+        </section>
+
+        <section class="mb-5">
+            <h2 class="text-teal">Algunos conceptos clave incluyen </h2>
+            <ul class="list-group">
+                <li class="list-group-item"><code>&lt;if&gt;</code>: inicia una decision si se cumple una condicion.
+                </li>
+                <li class="list-group-item"><code>&lt;else &gt;</code>: se ejecuta si la condicion del if no se cumple .</li>
+                <li class="list-group-item"><code>&lt;elif &gt;</code>: opcion adicional entre if y else (combinacion de else-if).
+                </li>
+                <li class="list-group-item"><code>&lt;condiccion &gt;</code>: una comparacion que puede ser verdadera o falsa .</li>
+            </ul>
+        </section>
+
+        <section class="mb-5">
+            <button class="btn btn-success" onclick="mostrarAlerta()">¡Entendido!</button>
+        </section>
+
+        <hr class="my-4">
+
+        <section class="reflection-box">
+            <h4>¿Qué te llevas de esta lección?</h4>
+            <p>Escribe un resumen o reflexión de lo que aprendiste:</p>
+            <form>
+                <div class="mb-3">
+                    <textarea class="form-control" rows="4"
+                        placeholder="Ejemplo: Aprendí qué son las variables, para qué sirve y cómo crear una estructura básica de los conceptos..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-reflection">Enviar reflexión</button>
+            </form>
+        </section>
+
+        <script type="module" src="../bootstrap.js"></script>
+
+</body>
+
+</html>

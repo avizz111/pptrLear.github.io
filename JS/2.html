@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Curso JS 2 - Variables</title>
+    <link href="../bootstrap.css" rel="stylesheet" />
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        header {
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        .content {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        pre {
+            background-color: #f1f1f1;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+
+        .reflection-box {
+            background: #fbffe7;
+            border: 2px dashed #ecf00d;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-top: 2rem;
+        }
+
+        .btn-reflection {
+            background-color: #fdf90d;
+            color: white;
+        }
+
+        .btn-reflection:hover {
+            background-color: #cac70a;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="bg-warning">
+        <nav class="navbar navbar-expand-xxl py-0 mx-0">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../logo_app.png" alt="Pptr Learn" width="100">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="../index.html">Menu</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="../editor.html">Editor</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="#">Perfil</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="../guia.html">Guia</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="index.html">Java Script</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <h1>Curso de JavaScript - Lección 2</h1>
+        <p class="lead">Variables y Tipos de Datos</p>
+    </header>
+
+    <main class="container my-5">
+        <div class="content">
+            <h2 class="text-warning">¿Qué es una variable?</h2>
+            <p>Una variable es un espacio en la memoria donde puedes guardar información. En JavaScript, puedes declarar
+                variables usando <code>let</code>, <code>const</code> o <code>var</code>.</p>
+
+            <h3 class="text-warning">Ejemplo de variable</h3>
+            <pre><code>let nombre = "Juan";
+const edad = 25;
+var ciudad = "Madrid";</code></pre>
+
+            <h3 class="text-warning">Tipos de datos básicos</h3>
+            <ul>
+                <li><strong>String (cadenas de texto):</strong> "Hola mundo"</li>
+                <li><strong>Number (números):</strong> 42, 3.14</li>
+                <li><strong>Boolean (booleanos):</strong> true, false</li>
+                <li><strong>Undefined:</strong> una variable sin valor</li>
+                <li><strong>Null:</strong> una variable intencionalmente vacía</li>
+            </ul>
+
+            <h3 class="text-warning">Mostrar variables en la consola</h3>
+            <p>Puedes usar <code>console.log()</code> para mostrar datos en la consola del navegador:</p>
+            <pre><code>let mensaje = "¡Hola!";
+console.log(mensaje);</code></pre>
+
+            <h3 class="text-warning">Ejemplo interactivo</h3>
+            <p>Presiona el botón para ver el valor de una variable:</p>
+            <button class="btn btn-primary" onclick="mostrarNombre()">Mostrar variable</button>
+
+            <script>
+                function mostrarNombre() {
+                    let nombre = "¡Hola!";
+                    alert("La variable es: " + nombre);
+                }
+            </script>
+
+            <hr class="my-4">
+
+            <div class="reflection-box">
+                <h4>¿Qué te llevas de esta lección?</h4>
+                <p>Escribe aquí lo que aprendiste sobre variables y tipos de datos:</p>
+                <form>
+                    <div class="mb-3">
+                        <textarea class="form-control" rows="4"
+                            placeholder="Por ejemplo: Aprendí a declarar variables con let y const."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-reflection">Enviar reflexión</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center text-white bg-dark py-3">
+        <p>&copy; 2025 Curso de JavaScript. Todos los derechos reservados.</p>
+    </footer>
+
+    <script type="module" src="../bootstrap.js"></script>
+
+</body>
+
+</html>

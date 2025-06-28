@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Curso CSS 2 - Selectores y propiedades básicas</title>
+    <link href="../bootstrap.css" rel="stylesheet" />
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        header {
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        .content {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        pre {
+            background-color: #f1f1f1;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+
+        .reflection-box {
+            background: #e9f7ef;
+            border: 2px dashed #20c3c9;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-top: 2rem;
+        }
+
+        .btn-reflection {
+            background-color: #198087;
+            color: white;
+        }
+
+        .btn-reflection:hover {
+            background-color: #146c65;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="bg-primary">
+        <nav class="navbar navbar-expand-xxl py-0 mx-0">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../logo_app.png" alt="Pptr Learn" width="100">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="../index.html">Menu</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="../editor.html">Editor</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="#">Perfil</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="../guia.html">Guia</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="index.html">CSS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <h1>Curso de CSS - Lección 2</h1>
+        <p class="lead">Selectores y propiedades básicas</p>
+    </header>
+
+    <main class="container my-5">
+        <div class="content">
+            <h2 class="text-primary">¿Qué son los selectores?</h2>
+            <p>Los <strong>selectores</strong> permiten aplicar estilos a elementos HTML específicos. Determinan a qué
+                elementos se les aplican las reglas CSS.</p>
+
+            <h3 class="text-primary">Tipos de selectores más comunes:</h3>
+            <ul>
+                <li><strong>Selector de etiqueta:</strong> Aplica estilo a todos los elementos de un tipo. Ej:
+                    <code>p { color: blue; }</code></li>
+                <li><strong>Selector de clase:</strong> Aplica estilo a los elementos con una clase específica. Ej:
+                    <code>.mi-clase { font-size: 18px; }</code></li>
+                <li><strong>Selector de ID:</strong> Aplica estilo a un elemento con un ID único. Ej:
+                    <code>#mi-id { text-align: center; }</code></li>
+            </ul>
+
+            <h3 class="text-primary">¿Qué son las propiedades?</h3>
+            <p>Las <strong>propiedades</strong> definen qué aspecto cambiarás: color, tamaño de fuente, márgenes, etc.
+            </p>
+
+            <h3 class="text-primary">Ejemplos prácticos:</h3>
+            <pre><code>/* Selector de etiqueta */
+h1 {
+  color: darkgreen;
+  font-size: 32px;
+}
+
+/* Selector de clase */
+.destacado {
+  background-color: yellow;
+  padding: 10px;
+}
+
+/* Selector de ID */
+#principal {
+  text-align: center;
+  font-weight: bold;
+}</code></pre>
+
+            <h3 class="text-primary">Aplicación en HTML:</h3>
+            <pre><code>&lt;h1&gt;Título&lt;/h1&gt;
+&lt;p class="destacado"&gt;Este texto está destacado&lt;/p&gt;
+&lt;div id="principal"&gt;Contenido principal&lt;/div&gt;</code></pre>
+
+            <h3 class="text-primary">Consejos:</h3>
+            <ul>
+                <li>Usa clases para aplicar estilos a varios elementos.</li>
+                <li>Evita abusar de los IDs para estilo, resérvalos para casos únicos.</li>
+                <li>Combina selectores para obtener más control (ej: <code>div p</code>).</li>
+            </ul>
+
+            <img src="https://www.freecodecamp.org/news/content/images/2021/09/css-selectors.jpg"
+                alt="Ejemplo de selectores" class="img-fluid rounded shadow-sm my-4">
+
+            <hr class="my-4">
+
+            <div class="reflection-box">
+                <h4>¿Qué te llevas de esta lección?</h4>
+                <p>Escribe aquí lo que aprendiste o lo que te pareció más útil:</p>
+                <form>
+                    <div class="mb-3">
+                        <textarea class="form-control" rows="4"
+                            placeholder="Por ejemplo: Aprendí que puedo usar clases para aplicar el mismo estilo a muchos elementos..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-reflection">Enviar reflexión</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center text-white bg-dark py-3">
+        <p>&copy; 2025 Curso de CSS. Todos los derechos reservados.</p>
+    </footer>
+
+    <script type="module" src="../bootstrap.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Curso JS 8 - Objetos</title>
+    <link href="../bootstrap.css" rel="stylesheet" />
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        header {
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        .content {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        pre {
+            background-color: #f1f1f1;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+
+        .reflection-box {
+            background: #fbffe7;
+            border: 2px dashed #ecf00d;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-top: 2rem;
+        }
+
+        .btn-reflection {
+            background-color: #fdf90d;
+            color: white;
+        }
+
+        .btn-reflection:hover {
+            background-color: #cac70a;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="bg-warning">
+        <nav class="navbar navbar-expand-xxl py-0 mx-0">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../logo_app.png" alt="Pptr Learn" width="100">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="../index.html">Menu</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="../editor.html">Editor</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="#">Perfil</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="../guia.html">Guia</a>l">Guia</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="index.html">Java Script</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <h1>Curso de JavaScript - Lección 8</h1>
+        <p class="lead">Objetos</p>
+    </header>
+
+    <main class="container my-5">
+        <div class="content">
+            <h2 class="text-warning">¿Qué es un objeto?</h2>
+            <p>Un objeto es una estructura que permite agrupar datos y funcionalidades relacionadas mediante pares
+                clave-valor.</p>
+
+            <h3 class="text-warning">Declaración de un objeto</h3>
+            <pre><code>let persona = {
+  nombre: "Ana",
+  edad: 28,
+  profesion: "Ingeniera",
+  saludar: function() {
+    return "Hola, soy " + this.nombre;
+  }
+};</code></pre>
+
+            <h3 class="text-warning">Acceder a propiedades</h3>
+            <pre><code>console.log(persona.nombre); // Ana</code></pre>
+
+            <h3 class="text-warning">Modificar propiedades</h3>
+            <pre><code>persona.edad = 29;</code></pre>
+
+            <h3 class="text-warning">Agregar nuevas propiedades</h3>
+            <pre><code>persona.pais = "México";</code></pre>
+
+            <h3 class="text-warning">Ejemplo interactivo</h3>
+            <p>Edita el nombre y edad de una persona y muestra su saludo:</p>
+            <div class="row g-2 mb-3">
+                <div class="col-md-6">
+                    <input type="text" id="nombre" class="form-control" placeholder="Nombre">
+                </div>
+                <div class="col-md-6">
+                    <input type="number" id="edad" class="form-control" placeholder="Edad">
+                </div>
+            </div>
+            <button class="btn btn-primary mb-3" onclick="mostrarSaludo()">Mostrar saludo</button>
+            <pre id="saludo" class="bg-light"></pre>
+
+            <script>
+                let persona = {
+                    nombre: "Ana",
+                    edad: 28,
+                    profesion: "Ingeniera",
+                    saludar: function () {
+                        return "Hola, soy " + this.nombre + " y tengo " + this.edad + " años.";
+                    }
+                };
+
+                function mostrarSaludo() {
+                    const nuevoNombre = document.getElementById("nombre").value.trim();
+                    const nuevaEdad = parseInt(document.getElementById("edad").value);
+                    if (nuevoNombre) persona.nombre = nuevoNombre;
+                    if (!isNaN(nuevaEdad)) persona.edad = nuevaEdad;
+                    document.getElementById("saludo").textContent = persona.saludar();
+                }
+            </script>
+
+            <hr class="my-4">
+
+            <div class="reflection-box">
+                <h4>¿Qué te llevas de esta lección?</h4>
+                <p>Escribe aquí lo que aprendiste sobre objetos en JavaScript:</p>
+                <form>
+                    <div class="mb-3">
+                        <textarea class="form-control" rows="4"
+                            placeholder="Por ejemplo: Aprendí que los objetos permiten agrupar información relacionada."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-reflection">Enviar reflexión</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center text-white bg-dark py-3">
+        <p>&copy; 2025 Curso de JavaScript. Todos los derechos reservados.</p>
+    </footer>
+
+    <script type="module" src="../bootstrap.js"></script>
+
+</body>
+
+</html>

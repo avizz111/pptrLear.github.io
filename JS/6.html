@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Curso JS 6 - Funciones</title>
+    <link href="../bootstrap.css" rel="stylesheet" />
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        header {
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        .content {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        pre {
+            background-color: #f1f1f1;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+
+        .reflection-box {
+            background: #fbffe7;
+            border: 2px dashed #ecf00d;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-top: 2rem;
+        }
+
+        .btn-reflection {
+            background-color: #fdf90d;
+            color: white;
+        }
+
+        .btn-reflection:hover {
+            background-color: #cac70a;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="bg-warning">
+        <nav class="navbar navbar-expand-xxl py-0 mx-0">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../logo_app.png" alt="Pptr Learn" width="100">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="../index.html">Menu</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="../editor.html">Editor</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="#">Perfil</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="../guia.html">Guia</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="index.html">Java Script</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <h1>Curso de JavaScript - Lección 6</h1>
+        <p class="lead">Funciones</p>
+    </header>
+
+    <main class="container my-5">
+        <div class="content">
+            <h2 class="text-warning">¿Qué es una función?</h2>
+            <p>Una función es un bloque de código reutilizable que se puede ejecutar cuando se necesite. Nos ayuda a
+                evitar la repetición y organizar el código.</p>
+
+            <h3 class="text-warning">Declarar una función</h3>
+            <pre><code>function saludar() {
+  console.log("¡Hola, mundo!");
+}</code></pre>
+
+            <h3 class="text-warning">Llamar a una función</h3>
+            <pre><code>saludar(); // Esto imprimirá "¡Hola, mundo!"</code></pre>
+
+            <h3 class="text-warning">Funciones con parámetros</h3>
+            <pre><code>function saludarUsuario(nombre) {
+  console.log("Hola, " + nombre + "!");
+}
+saludarUsuario("Carlos");</code></pre>
+
+            <h3 class="text-warning">Funciones que retornan un valor</h3>
+            <pre><code>function sumar(a, b) {
+  return a + b;
+}
+let resultado = sumar(3, 5); // resultado = 8</code></pre>
+
+            <h3>Llama una funcion desde tu documento</h3>
+            <p>Puedes llamar las distintas funciones que hagas desde tu archivo con el atributo <code>onclick = ""</code>, esto lo que hace es que al presionar dicho elemento llamara a la funcion que este entre las comillas</p>
+            <pre><code>&lt;button onclick = "funcion_ejemplo()"&gt;</code></pre>
+            <pre><code>function funcion_ejemplo() {
+
+    alert("hola");
+}
+            </code></pre>
+
+            <h3 class="text-warning">Ejemplo interactivo</h3>
+            <p>Ingresa dos números y suma con una función:</p>
+            <div class="row g-2 mb-3">
+                <div class="col-md-6">
+                    <input type="number" id="num1" class="form-control" placeholder="Número 1">
+                </div>
+                <div class="col-md-6">
+                    <input type="number" id="num2" class="form-control" placeholder="Número 2">
+                </div>
+            </div>
+            <button class="btn btn-primary mb-3" onclick="sumarNumeros()">Sumar</button>
+            <pre id="resultado" class="bg-light"></pre>
+
+            <script>
+                function sumarNumeros() {
+                    let a = parseFloat(document.getElementById("num1").value);
+                    let b = parseFloat(document.getElementById("num2").value);
+                    if (isNaN(a) || isNaN(b)) {
+                        document.getElementById("resultado").textContent = "Por favor, ingresa números válidos.";
+                        return;
+                    }
+                    let suma = sumar(a, b);
+                    document.getElementById("resultado").textContent = "Resultado: " + suma;
+                }
+
+                function sumar(x, y) {
+                    return x + y;
+                }
+            </script>
+
+            <hr class="my-4">
+
+            <div class="reflection-box">
+                <h4>¿Qué te llevas de esta lección?</h4>
+                <p>Escribe aquí lo que aprendiste sobre funciones:</p>
+                <form>
+                    <div class="mb-3">
+                        <textarea class="form-control" rows="4"
+                            placeholder="Por ejemplo: Aprendí a declarar y usar funciones con parámetros y retorno."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-reflection">Enviar reflexión</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center text-white bg-dark py-3">
+        <p>&copy; 2025 Curso de JavaScript. Todos los derechos reservados.</p>
+    </footer>
+
+    <script type="module" src="../bootstrap.js"></script>
+
+</body>
+
+</html>

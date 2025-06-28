@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Curso 10 - Buenas prácticas en conseptos</title>
+    <link href="../bootstrap.css" rel="stylesheet" />
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        header {
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        .content {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        pre {
+            background-color: #f1f1f1;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+
+        .reflection-box {
+            background: #e9f7f1;
+            border: 2px dashed #20c988;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-top: 2rem;
+        }
+
+        .btn-reflection {
+            background-color: #19875d;
+            color: white;
+        }
+
+        .btn-reflection:hover {
+            background-color: #146c4a;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="bg-teal">
+        <nav class="navbar navbar-expand-xxl py-0 mx-0">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../logo_app.png" alt="Pptr Learn" width="100">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="../index.html">Menu</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="../editor.html">Editor</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="#">Perfil</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="../guia.html">Guia</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="index.html">Conceptos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <h1>Curso 10: Algoritmos de busqueda</h1>
+        <p class="lead">elementos especificos en una coleccion de datos</p>
+    </header>
+
+    <main class="container my-5">
+        <div class="contenido">
+            <h2 class="text-teal">ventajas y desventajas</h2>
+            <p>Más eficiente que la búsqueda binaria para colecciones con datos uniformemente distribuidos y por otro lado
+                Requiere que la colección esté ordenada.  No es tan eficiente como la búsqueda binaria si los datos no están uniformemente distribuidos
+            </p>
+
+            <h3 class="text-teal">1. Búsqueda Hash</h3>
+            <p>Utiliza una función hash para mapear cada elemento a una posición específica en una tabla hash.  Ideal para búsquedas rápidas.
+               En promedio, O(1) (tiempo constante). En el peor caso, puede ser O(n) debido a colisiones.</p>
+            <code>
+        &lt;article&gt;<br>
+        &nbsp;&nbsp;&lt;h2&gt;Título del artículo&lt;/h2&gt;<br>
+        &nbsp;&nbsp;&lt;p&gt;Contenido...&lt;/p&gt;<br>
+        &lt;/article&gt;
+      </code>
+
+            <h3 class="text-teal">2. Búsqueda Interpolación</h3>
+            <p>Similar a la búsqueda binaria, pero en lugar de dividir la colección por la mitad, estima la posición del elemento buscado basándose en su valor y los valores extremos de la colección.
+ En promedio, O(log log n).  Más eficiente que la búsqueda binaria cuando los elementos están</p>
+
+            <h3 class="text-teal">3.Búsqueda Binaria: </h3>
+            <p>Requiere que la colección esté ordenada.  Divide repetidamente la colección a la mitad, descartando la mitad que no contiene el elemento buscado.
+ O(log n).  Mucho más eficiente que la búsqueda lineal para conjuntos de datos grandes.</p>
+
+            <h3 class="text-teal">4.Búsqueda Lineal (o Secuencial) </h3>
+            <p>Este es el algoritmo más simple.  Recorre la colección elemento por elemento hasta encontrar el elemento buscado o hasta llegar al final.
+            O(n), donde 'n' es el número de elementos.  Su eficiencia disminuye significativamente a medida que aumenta el tamaño del conjunto de datos.</p>
+             
+            <h3 class="text-teal">5. Búsqueda en Árboles:</h3>
+            <p>Se utilizan estructuras de datos arbóreas, como árboles binarios de búsqueda (ABB) o árboles AVL, para organizar los datos.  La búsqueda se realiza recorriendo el árbol de manera eficiente.</p>
+
+            <h3 class="text-teal">6. los algoritmo</h3>
+            <p>son erramientas de busqueda con una mejor practica.</p>
+
+            <h3 class="text-teal">7. Usa comentarios solo cuando sea necesario</h3>
+            <code>
+        &lt;!-- Esta sección muestra los artículos principales --&gt;
+      </code>
+
+            <h3 class="text-teal">8. conplejidad</h3>
+            <p>en un abb balanceado ,la complejidad promedio es de o(long n)</p>
+
+            <hr class="my-4">
+
+            <section class="reflection-box">
+                <h4>¿Qué te llevas de esta lección?</h4>
+                <p>Escribe un resumen o reflexión de lo que aprendiste:</p>
+                <form>
+                    <div class="mb-3">
+                        <textarea class="form-control" rows="4"
+                            placeholder="Por ejemplo: Aprendí a escribir HTML limpio y semántico."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-reflection">Enviar reflexión</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer class="text-center text-white bg-dark py-3">
+        <p>&copy; 2025 Curso de HTML. Todos los derechos reservados.</p>
+    </footer>
+
+    <script type="module" src="../bootstrap.js"></script>
+
+</body>
+
+</html>

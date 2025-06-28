@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Curso SQL 1 - ¿Qué es SQL?</title>
+    <link href="../bootstrap.css" rel="stylesheet" />
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        header {
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        .content {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        pre {
+            background-color: #f1f1f1;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+
+        .reflection-box {
+            background: #e7efff;
+            border: 2px dashed #0d49f0;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-top: 2rem;
+        }
+
+        .btn-reflection {
+            background-color: #0d45fd;
+            color: white;
+        }
+
+        .btn-reflection:hover {
+            background-color: #0a47ca;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="bg-primary">
+        <nav class="navbar navbar-expand-xxl py-0 mx-0">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../logo_app.png" alt="Pptr Learn" width="100">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="../index.html">Menu</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="../editor.html">Editor</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="#">Perfil</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="../guia.html">Guia</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="index.html">SQL</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <h1>Curso de SQL - Lección 1</h1>
+        <p class="lead">Que es SQL y que es SELECT</p>
+    </header>
+
+    <main class="container my-5">
+        <div class="content">
+            <h2 class="text-primary">¿Qué es SQL?</h2>
+            <p>SQL (Structured Query Language) es un lenguaje de programación diseñado para gestionar y manipular datos en bases de datos relacionales. SQL se utiliza para crear, modificar y consultar bases de datos, y es un estándar ampliamente adoptado en la industria.</p>
+
+            <h3 class="text-primary">¿para que sirve?</h3>
+            <ul>
+                <li>1.Crear y modificar estructuras de datos: Crear tablas, índices, vistas, etc.</li>
+                <li>2.Insertar, actualizar y eliminar datos: Agregar, modificar o eliminar registros en una base de datos.</li>
+                <li>3.Consultar datos: Recuperar información específica de una base de datos utilizando consultas.</li>
+                <li>4.Realizar operaciones de agregación: Calcular sumas, promedios, máximos, mínimos, etc.</li>
+            </ul>
+
+            <h3 class="text-primary">¿Que es SELECT?</h3>
+            <p>SELECT es una instrucción SQL que se utiliza para consultar datos en una base de datos. Permite seleccionar columnas específicas de una o varias tablas y devuelve los registros que coinciden con los criterios de búsqueda.</p>
+
+            <pre><code>SELECT columna1, columna2, ...
+FROM tabla;</code></pre>
+
+            <P>Donde:
+
+- columna1, columna2, etc. son las columnas que se desean seleccionar.
+- tabla es la tabla de la que se desean seleccionar los datos.
+</P>
+
+            
+
+            <hr class="my-4">
+
+            <div class="reflection-box">
+                <h4>¿Qué te llevas de esta lección?</h4>
+                <p>Escribe aquí lo que aprendiste o te llamó la atención de esta introducción:</p>
+                <form>
+                    <div class="mb-3">
+                        <textarea class="form-control" rows="4"
+                            placeholder="Por ejemplo: Aprendí que JavaScript permite que una página web tenga funciones dinámicas."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-reflection">Enviar reflexión</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center text-white bg-dark py-3">
+        <p>&copy; 2025 Curso de SQL. Todos los derechos reservados.</p>
+    </footer>
+
+    <script type="module" src="../bootstrap.js"></script>
+
+</body>
+
+</html>

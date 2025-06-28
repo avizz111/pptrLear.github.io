@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Curso JS 9 - Condicionales</title>
+    <link href="../bootstrap.css" rel="stylesheet" />
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        header {
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        .content {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        pre {
+            background-color: #f1f1f1;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+
+        .reflection-box {
+            background: #fbffe7;
+            border: 2px dashed #ecf00d;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-top: 2rem;
+        }
+
+        .btn-reflection {
+            background-color: #fdf90d;
+            color: white;
+        }
+
+        .btn-reflection:hover {
+            background-color: #cac70a;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="bg-warning">
+        <nav class="navbar navbar-expand-xxl py-0 mx-0">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../logo_app.png" alt="Pptr Learn" width="100">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="../index.html">Menu</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="../editor.html">Editor</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="#">Perfil</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="../guia.html">Guia</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="index.html">Java Script</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <h1>Curso de JavaScript - Lección 9</h1>
+        <p class="lead">Condicionales</p>
+    </header>
+
+    <main class="container my-5">
+        <div class="content">
+            <h2 class="text-warning">¿Qué son los condicionales?</h2>
+            <p>Los condicionales son estructuras que permiten ejecutar diferentes bloques de código dependiendo de si se
+                cumple o no una condición.</p>
+
+            <h3 class="text-warning">Sentencia if</h3>
+            <pre><code>if (condicion) {
+  // Código a ejecutar si la condición es verdadera
+}</code></pre>
+
+            <h3 class="text-warning">Sentencia if-else</h3>
+            <pre><code>if (condicion) {
+  // Código a ejecutar si la condición es verdadera
+} else {
+  // Código a ejecutar si la condición es falsa
+}</code></pre>
+
+            <h3 class="text-warning">Sentencia else-if</h3>
+            <pre><code>if (condicion1) {
+  // Código si condicion1 es verdadera
+} else if (condicion2) {
+  // Código si condicion2 es verdadera
+} else {
+  // Código si ninguna de las condiciones es verdadera
+}</code></pre>
+
+            <h3 class="text-warning">Ejemplo interactivo</h3>
+            <p>Ingresa tu edad y verás un mensaje que cambia dependiendo del valor:</p>
+            <div class="row g-2 mb-3">
+                <div class="col-md-6">
+                    <input type="number" id="edad" class="form-control" placeholder="Tu edad" min="0">
+                </div>
+            </div>
+            <button class="btn btn-primary mb-3" onclick="evaluarEdad()">Ver mensaje</button>
+            <pre id="mensaje" class="bg-light"></pre>
+
+            <script>
+                function evaluarEdad() {
+                    const edad = parseInt(document.getElementById("edad").value);
+                    let mensaje = "";
+                    if (edad >= 18) {
+                        mensaje = "Eres mayor de edad.";
+                    } else if (edad >= 13) {
+                        mensaje = "Eres un adolescente.";
+                    } else if (edad <= 0) {
+                        mensaje = "Ingresa un número mayor a 0";
+                    } else {
+                        mensaje = "Eres un niño.";
+                    }
+                    document.getElementById("mensaje").textContent = mensaje;
+                }
+            </script>
+
+            <hr class="my-4">
+
+            <div class="reflection-box">
+                <h4>¿Qué te llevas de esta lección?</h4>
+                <p>Escribe aquí lo que aprendiste sobre condicionales en JavaScript:</p>
+                <form>
+                    <div class="mb-3">
+                        <textarea class="form-control" rows="4"
+                            placeholder="Por ejemplo: Aprendí a usar condicionales para controlar el flujo de ejecución de mi código."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-reflection">Enviar reflexión</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center text-white bg-dark py-3">
+        <p>&copy; 2025 Curso de JavaScript. Todos los derechos reservados.</p>
+    </footer>
+
+    <script type="module" src="../bootstrap.js"></script>
+
+</body>
+
+</html>

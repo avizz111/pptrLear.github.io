@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Curso CSS 3 - Colores, fondos y bordes</title>
+    <link href="../bootstrap.css" rel="stylesheet" />
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        header {
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        .content {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        pre {
+            background-color: #f1f1f1;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+
+        .reflection-box {
+            background: #e9f7ef;
+            border: 2px dashed #20c3c9;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-top: 2rem;
+        }
+
+        .btn-reflection {
+            background-color: #198087;
+            color: white;
+        }
+
+        .btn-reflection:hover {
+            background-color: #146c65;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="bg-primary">
+        <nav class="navbar navbar-expand-xxl py-0 mx-0">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../logo_app.png" alt="Pptr Learn" width="100">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="../index.html">Menu</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="../editor.html">Editor</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="#">Perfil</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="../guia.html">Guia</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="index.html">CSS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <h1>Curso de CSS - Lección 3</h1>
+        <p class="lead">Colores, fondos y bordes</p>
+    </header>
+
+    <main class="container my-5">
+        <div class="content">
+            <h2 class="text-primary">Uso de colores en CSS</h2>
+            <p>CSS permite aplicar colores a texto, fondos, bordes y más. Puedes usar:</p>
+            <ul>
+                <li>Colores por nombre: <code>red</code>, <code>blue</code>, <code>green</code></li>
+                <li>Hexadecimales: <code>#ff0000</code>, <code>#00ff00</code></li>
+                <li>RGB: <code>rgb(255, 0, 0)</code></li>
+                <li>RGBA (con opacidad): <code>rgba(0, 0, 255, 0.5)</code></li>
+            </ul>
+
+            <h3 class="text-primary">Ejemplo:</h3>
+            <pre><code>h1 {
+  color: #1a73e8;
+}
+
+p {
+  background-color: rgba(255, 255, 0, 0.3);
+}</code></pre>
+
+            <h2 class="text-primary">Fondos en CSS</h2>
+            <p>Con CSS puedes aplicar colores, imágenes o gradientes como fondo.</p>
+
+            <h3 class="text-primary">Ejemplos:</h3>
+            <pre><code>body {
+  background-color: #f0f0f0;
+  background-image: url('fondo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}</code></pre>
+
+            <p>También puedes usar gradientes:</p>
+            <pre><code>div {
+  background: linear-gradient(to right, red, yellow);
+}</code></pre>
+
+            <h2 class="text-primary">Estilo de bordes</h2>
+            <p>Los bordes en CSS pueden ser sólidos, punteados, dobles, etc.</p>
+
+            <h3 class="text-primary">Ejemplo:</h3>
+            <pre><code>.caja {
+  border: 2px dashed #198754;
+  padding: 10px;
+  margin: 10px;
+}</code></pre>
+
+            <h3 class="text-primary">Propiedades relacionadas:</h3>
+            <ul>
+                <li><code>border-width</code>, <code>border-style</code>, <code>border-color</code></li>
+                <li><code>border-radius</code> para bordes redondeados</li>
+            </ul>
+
+            <img src="https://www.w3schools.com/css/img_border.gif" alt="Tipos de borde"
+                class="img-fluid rounded shadow-sm my-4">
+
+            <hr class="my-4">
+
+            <div class="reflection-box">
+                <h4>¿Qué te llevas de esta lección?</h4>
+                <p>Escribe aquí lo que aprendiste o lo que te pareció más interesante:</p>
+                <form>
+                    <div class="mb-3">
+                        <textarea class="form-control" rows="4"
+                            placeholder="Por ejemplo: Aprendí que puedo usar colores RGBA para dar transparencia a fondos..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-reflection">Enviar reflexión</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center text-white bg-dark py-3">
+        <p>&copy; 2025 Curso de CSS. Todos los derechos reservados.</p>
+    </footer>
+
+    <script type="module" src="../bootstrap.js"></script>
+
+</body>
+
+</html>

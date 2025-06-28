@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Curso 10 - Buenas prácticas en HTML</title>
+    <link href="../bootstrap.css" rel="stylesheet" />
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        header {
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        .content {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        pre {
+            background-color: #f1f1f1;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+
+        .reflection-box {
+            background: #f7e9e9;
+            border: 2px dashed #c92020;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-top: 2rem;
+        }
+
+        .btn-reflection {
+            background-color: #871919;
+            color: white;
+        }
+
+        .btn-reflection:hover {
+            background-color: #6c1414;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="bg-danger">
+        <nav class="navbar navbar-expand-xxl py-0 mx-0">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../logo_app.png" alt="Pptr Learn" width="100">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="../index.html">Menu</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="../editor.html">Editor</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="#">Perfil</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="../guia.html">Guia</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="index.html">HTML</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <h1>Curso 10: Buenas Prácticas en HTML</h1>
+        <p class="lead">Aprende cómo escribir HTML limpio, accesible y mantenible.</p>
+    </header>
+
+    <main class="container my-5">
+        <div class="contenido">
+            <h2 class="text-danger">¿Por qué seguir buenas prácticas?</h2>
+            <p>Escribir código HTML con buenas prácticas mejora la accesibilidad, el rendimiento, la legibilidad y la
+                colaboración en equipo.</p>
+
+            <h3 class="text-danger">1. Usa etiquetas semánticas</h3>
+            <p>Prefiere <code>&lt;header&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>,
+                <code>&lt;footer&gt;</code> sobre <code>&lt;div&gt;</code> genéricos.</p>
+            <code>
+        &lt;article&gt;<br>
+        &nbsp;&nbsp;&lt;h2&gt;Título del artículo&lt;/h2&gt;<br>
+        &nbsp;&nbsp;&lt;p&gt;Contenido...&lt;/p&gt;<br>
+        &lt;/article&gt;
+      </code>
+
+            <h3 class="text-danger">2. Indenta correctamente</h3>
+            <p>La indentación mejora la legibilidad y evita errores.</p>
+
+            <h3 class="text-danger">3. Usa el atributo <code>alt</code> en imágenes</h3>
+            <p>Ayuda a usuarios con lectores de pantalla y mejora el SEO.</p>
+
+            <h3 class="text-danger">4. Evita contenido obsoleto</h3>
+            <p>No uses etiquetas como <code>&lt;font&gt;</code> o <code>&lt;center&gt;</code>; usa CSS.</p>
+
+            <h3 class="text-danger">5. Valida tu HTML</h3>
+            <p>Usa herramientas como el <a href="https://validator.w3.org/" target="_blank">validador de W3C</a> para
+                asegurarte de que tu código es correcto.</p>
+
+            <h3 class="text-danger">6. Escribe atributos con comillas</h3>
+            <p>Siempre encierra los valores de atributos entre comillas.</p>
+
+            <h3 class="text-danger">7. Usa comentarios solo cuando sea necesario</h3>
+            <code>
+        &lt;!-- Esta sección muestra los artículos principales --&gt;
+      </code>
+
+            <h3 class="text-danger">8. Organiza tus archivos</h3>
+            <p>Separa HTML, CSS y JS en carpetas como <code>css/</code>, <code>js/</code> y <code>img/</code>.</p>
+
+            <hr class="my-4">
+
+            <section class="reflection-box">
+                <h4>¿Qué te llevas de esta lección?</h4>
+                <p>Escribe un resumen o reflexión de lo que aprendiste:</p>
+                <form>
+                    <div class="mb-3">
+                        <textarea class="form-control" rows="4"
+                            placeholder="Por ejemplo: Aprendí a escribir HTML limpio y semántico."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-reflection">Enviar reflexión</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer class="text-center text-white bg-dark py-3">
+        <p>&copy; 2025 Curso de HTML. Todos los derechos reservados.</p>
+    </footer>
+
+    <script type="module" src="../bootstrap.js"></script>
+
+</body>
+
+</html>
